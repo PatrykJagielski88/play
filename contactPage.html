@@ -1,0 +1,73 @@
+<!-------w---------
+
+    Project 3
+    Name: Patryk Jagielski
+    Date: April 22, 2021
+    Description: This is the HTML portion of Project 3.
+
+------------------>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>Backyard telescopes</title>
+<link rel="stylesheet" type="text/css" href="PatrykJ.css" />
+		<script src="PatrykJ.js"></script>
+</head>
+<body >
+	<header>
+		<h1 id="indexHeading"><strong>Personal use telescopes For Sale</strong></h1>
+	</header>
+	<section id="contactBody">
+		<p>CONTACT FORM</p>
+		<p>QUESTIONS, CONCERNS OR COMMENTS?</p>
+		<P>WRITE US A LINE :)</P>
+		<form id="contact" method="post" 
+			action="index.html" >
+			<ol>
+				<li>
+					<label for="fullName">Full Name:</label>
+					<input type="text" autofocus id="fullName" name="fullName" />
+				</li>
+				<li>
+					<div class="error" id="fullName_error">*Please enter your full name</div>
+				</li>
+				<li>
+					<label for="phoneNumber">Phone Number:</label>
+					<input type="number" id="phoneNumber" name="phoneNumber" />
+				</li>
+				<li>
+					<div class="error" id="phoneNumber_error">*Please enter your 10 digit phone number</div>
+				</li>
+				<li>
+					<label for="email">Email:</label>
+					<input type="email" id="email" name="email" />
+				</li>
+				<li>
+					<div class="error" id="email_error">*Please enter a valid email address</div>
+				</li>
+				<li>
+					<label for="textarea">Comments:</label>
+					<textarea id="textarea" name="textarea" rows="5" cols="50"></textarea>
+				</li>
+			</ol>	
+			<p id="buttons">
+				<button id="submit" type="submit">Submit</button>
+				<button id="reset" type="reset">Reset From</button>
+			</p>
+		</form>
+	</section>
+		<aside>		
+			<nav>		
+				<ul>	
+					<li><a href="index.html">Home </a></li>
+					<li><a class="bold" href="2page.html">Products </a></li>
+					<li><a class="bold" href="contactPage.html"> Contact Us</a></li>	
+				</ul>				
+			</nav>
+		</aside>
+	<footer >
+		<div id="footer">
+			<a href="index.html">Home </a> | <a href="2page.html"> Products </a> | <a href="contactPage.html"> Contact Us</a>		
+		</div>
+	</footer>
+</body>
